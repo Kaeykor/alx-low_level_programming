@@ -10,7 +10,7 @@
 
 void print_diagonal(int n)
 {
-	int row, a;
+	int row, line_num;
 
 	if (n <= 0)
 	{
@@ -22,12 +22,13 @@ void print_diagonal(int n)
 		{
 			if (row > 1)
 			{
-				for (a = 1; a <= row - 1; a++)
+				for (line_num = 1; line_num <= row - 1; line_num++)
 				{
-				_putchar('_');
+				_putchar(' ');
 				}
 			}
 			_putchar('\\');
 			_putchar('\n');
 		}
 	}
+}
